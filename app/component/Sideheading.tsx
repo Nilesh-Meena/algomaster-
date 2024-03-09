@@ -23,18 +23,18 @@ const Sideheading: React.FC<Props> = ({ contentHtml }) => {
   };
 
   const scrollToHeading = (heading: string) => {
-    console.log("scroll", { heading });
+    // console.log("scroll", { heading });
     const offset = 80; // Adjust this value as needed
     const headingElements = document.querySelectorAll("h1");
     for (const element of headingElements) {
       if (element.textContent === heading) {
         const scrollTop =
           document.documentElement.scrollTop || document.body.scrollTop;
-        console.log({ scrollTop }); // Current scroll position
+        // console.log({ scrollTop }); // Current scroll position
         const rect = element.getBoundingClientRect();
-        console.log({ rect });
+        // console.log({ rect });
         const scrollPosition = rect.top + scrollTop - offset;
-        console.log({ scrollPosition });
+        // console.log({ scrollPosition });
         window.scrollTo({ top: scrollPosition, behavior: "smooth" });
         break; // Stop searching once we've found the matching heading
       }
