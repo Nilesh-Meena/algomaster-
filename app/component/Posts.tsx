@@ -6,7 +6,6 @@ export default function Posts() {
 
   return (
     <div className="mt-6 mx-4">
-      <h2 className="text-4xl font-bold text-black w-full  ">Blogs</h2>
       <div className="mt-8 w-full">
         <Card post={blogPosts} />
       </div>

@@ -8,7 +8,7 @@ type Props = {
 };
 
 const Card = ({ post }: Props) => {
-  console.log(post);
+  // console.log(post);
   if (!post || post.length === 0) {
     return <div>No posts available</div>;
   }
