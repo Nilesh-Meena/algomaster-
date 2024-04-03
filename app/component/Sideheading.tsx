@@ -8,18 +8,23 @@ type Props = {
 
 const Sideheading: React.FC<Props> = ({ contentHtml }) => {
   const parseHTML = (html: string) => {
-    const doc = new DOMParser().parseFromString(html, "text/html");
-    // console.log("parse", { doc });
-    return doc;
+    // Ensure DOMParser is available in the client-side environment
+    if (typeof window !== "undefined") {
+      const doc = new DOMParser().parseFromString(html, "text/html");
+      return doc;
+    }
+    return null; // Return null if executed in a non-browser environment
   };
 
   const getHeadings = (html: string): string[] => {
     const doc = parseHTML(html);
-    const headings = Array.from(doc.querySelectorAll("h1")).map(
-      (heading) => heading.textContent || ""
-    );
-    // console.log("get", { headings });
-    return headings;
+    if (doc) {
+      const headings = Array.from(doc.querySelectorAll("h1")).map(
+        (heading) => heading.textContent || ""
+      );
+      return headings;
+    }
+    return []; // Return an empty array if parsing failed
   };
 
   const scrollToHeading = (heading: string) => {
