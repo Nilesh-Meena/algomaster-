@@ -3,6 +3,7 @@ import Card from "./Card";
 
 export default function Posts() {
   const blogPosts: BlogPost[] = getSortedPostsData();
+  // console.log(blogPosts);
 
   return (
     <div className="mt-6 mx-4">

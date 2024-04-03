@@ -1,0 +1,102 @@
+.custom {
+  width: 100%;
+  /* Font size */
+  font-size: 1rem;
+  /* Line height */
+  line-height: 1.6;
+  /* Margin bottom for paragraphs */
+  margin-bottom: 1.5rem;
+  /* Max width */
+  /* max-width: 65ch; Adjust as needed */
+  /* Text color */
+  color: #333; /* Adjust as needed */
+}
+
+.custom h1 {
+  font-size: 3rem; /* Equivalent to em(64, 24) */
+  margin-top: 0;
+  margin-bottom: 0.875em; /* Equivalent to em(56, 64) */
+  line-height: 1;
+}
+.custom h2 {
+  font-size: em(48, 24);
+  margin-top: em(72, 48);
+  margin-bottom: em(40, 48);
+  line-height: round(52 / 48);
+}
+.custom h2 {
+  font-size: 2em; /* 48px / 24px */
+  margin-top: 1.5em; /* 72px / 48px */
+  margin-bottom: 0.833em; /* 40px / 48px */
+  line-height: 1.083; /* 52px / 48px */
+}
+
+.custom h3 {
+  font-size: 1.5em; /* 36px / 24px */
+  margin-top: 1.556em; /* 56px / 36px */
+  margin-bottom: 0.667em; /* 24px / 36px */
+  line-height: 1.222; /* 44px / 36px */
+}
+
+.custom h4 {
+  margin-top: 1.667em; /* 40px / 24px */
+  margin-bottom: 0.667em; /* 16px / 24px */
+  line-height: 1.5; /* 36px / 24px */
+}
+
+.custom h1,
+.custom h2,
+.custom h3,
+.custom h4,
+.custom h5,
+.custom h6 {
+  /* Heading styles */
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.custom a {
+  /* Link styles */
+  color: #3182ce; /* Adjust as needed */
+  text-decoration: underline;
+}
+
+.custom strong {
+  /* Bold text styles */
+  font-weight: bold;
+}
+
+.custom em {
+  /* Italic text styles */
+  font-style: italic;
+}
+
+/* Additional styles for lists */
+.custom ul,
+.custom ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Additional styles for list items */
+.custom li {
+  margin-bottom: 0.5rem;
+}
+
+.custom pre {
+  position: relative;
+  background-color: #1e1e1e;
+  padding: 1.5em;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid #333;
+}
+
+.custom pre code {
+  font-family: "SF Mono", "Fira Code", Consolas, monospace;
+  font-size: 14px;
+  color: #d4d4d4; /* Lighter text color */
+  line-height: 1.5;
+  position: relative; /* Ensure line numbers are positioned relative to code block */
+}

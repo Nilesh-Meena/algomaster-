@@ -27,6 +27,8 @@ export function getSortedPostsData() {
       seoTitle: matterResult.data.seoTitle,
       layout: matterResult.data.layout,
       tag: matterResult.data.tag,
+      image: matterResult.data.image,
+      color: matterResult.data.color,
     };
 
     // Combine the data with the id
@@ -56,6 +58,8 @@ export async function getPostData(id: string) {
     seoTitle: matterResult.data.seoTitle,
     layout: matterResult.data.layout,
     tag: matterResult.data.tag,
+    image: matterResult.data.image,
+    color: matterResult.data.color,
     contentHtml,
   };
 

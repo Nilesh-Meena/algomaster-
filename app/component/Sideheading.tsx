@@ -1,5 +1,5 @@
 "use client";
-// Sideheading.tsx
+
 import React from "react";
 
 type Props = {

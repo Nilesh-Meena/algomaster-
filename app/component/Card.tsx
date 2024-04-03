@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import pic1 from "@/public/pic1.jpg";
 
 type Props = {
   post: BlogPost[];
@@ -24,7 +23,7 @@ const Card = ({ post }: Props) => {
           <Link href={`/posts/${post.id}`} className="">
             <Image
               className="border-t-2 border-l-2 border-r-2 border-solid border-black"
-              src={pic1}
+              src={post.image}
               alt="Picture 1"
               width="500"
               height="600"

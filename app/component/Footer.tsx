@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import TransitionLink from "./ui/TransitionLink";
 
 const Footer = () => {
   return (
@@ -13,24 +14,32 @@ const Footer = () => {
             {" "}
             {/* Added m-0 class to remove default margin */}
             <li>
-              <Link href="/" className="hover:underline me-4 md:me-6">
-                Home
-              </Link>
+              <TransitionLink
+                href="/"
+                className="hover:underline me-4 md:me-6"
+                label="Home"
+              />
             </li>
             <li>
-              <Link href="/blogs" className="hover:underline me-4 md:me-6">
-                Blogs
-              </Link>
+              <TransitionLink
+                href="/blogs"
+                className="hover:underline me-4 md:me-6"
+                label="Blogs"
+              />
             </li>
             <li>
-              <Link href="/projects" className="hover:underline me-4 md:me-6">
-                Project
-              </Link>
+              <TransitionLink
+                href="/projects"
+                className="hover:underline me-4 md:me-6"
+                label="Project"
+              />
             </li>
             <li>
-              <Link href="/" className="hover:underline">
-                Contact
-              </Link>
+              <TransitionLink
+                href="/contact"
+                className="hover:underline me-4 md:me-6"
+                label="Contact"
+              />
             </li>
           </ul>
         </div>

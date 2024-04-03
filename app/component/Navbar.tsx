@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import TransitionLink from "./ui/TransitionLink";
 import Toggle from "./ui/Toggle";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+
   const path = usePathname();
 
   const toggleNav = () => {
@@ -15,9 +17,9 @@ const Navbar = () => {
 
   return (
     // Header
-    <div className="bg-white/80 dark:bg-darkBg/80 dark:text-white/70 sticky z-[150] w-full py-0 border-b-2 border-solid border-black dark:border-white/80 top-0 box-border font-normal not-italic block">
+    <div className="bg-white/80 dark:bg-darkBg/80 dark:text-white/70 sticky z-[10] w-full py-0 border-b-2 border-solid border-black dark:border-white/80 top-0 box-border font-normal not-italic block ">
       {/* Navbar */}
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 relative">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -84,15 +86,16 @@ const NavItem = ({
   isActive: boolean;
 }) => {
   return (
-    <li>
-      <Link
+    <li className="flex items-center">
+      <TransitionLink
         href={href}
-        className={`hover:underline dark:hover:text-white ${
-          isActive ? "text-black dark:text-white underline" : ""
+        label={label}
+        className={`hover:underline hover:underline-offset-2 dark:hover:text-white ${
+          isActive
+            ? "text-black dark:text-white underline underline-offset-2"
+            : ""
         }`}
-      >
-        {label}
-      </Link>
+      />
     </li>
   );
 };

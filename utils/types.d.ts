@@ -5,4 +5,6 @@ type BlogPost = {
   seoTitle: string;
   layout: string;
   tag: string;
+  image: string;
+  color: string;
 };

@@ -1,4 +1,4 @@
-import Posts from "./component/Posts";
+// import Posts from "./component/Posts";
 import { LampDemo } from "./component/ui/Lamp";
 
 export default function Home() {

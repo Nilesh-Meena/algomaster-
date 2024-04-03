@@ -4,91 +4,11 @@ date: "2023-03-17"
 seoTitle: "First Hello world"
 layout: "article"
 tag: "JS"
+image: "/pic1.jpg"
+color: "#FCFF74"
 ---
 
 # JavaScript
-
-1. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-2. The `.length` property is used to return the length of the string.
-
-3. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-4. The `.length` property is used to return the length of the string.
-
-5. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-6. The `.length` property is used to return the length of the string.
-
-7. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-8. The `.length` property is used to return the length of the string.
-
-9. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-10. The `.length` property is used to return the length of the string.
-    v
-
-v
-
-1. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-2. The `.length` property is used to return the length of the string.
-   v
-
-3. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-4. The `.length` property is used to return the length of the string.
-
-5. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-6. The `.length` property is used to return the length of the string.
-
-7. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-8. The `.length` property is used to return the length of the string.
-   v
-
-9. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-10. The `.length` property is used to return the length of the string.
-
-11. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-12. The `.length` property is used to return the length of the string.
-
-13. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-14. The `.length` property is used to return the length of the string.
-
-15. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-16. The `.length` property is used to return the length of the string.
-
-17. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-18. The `.length` property is used to return the length of the string.
-    v
-
-19. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-20. The `.length` property is used to return the length of the string.
-
-21. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-22. The `.length` property is used to return the length of the string.
-    v
-
-23. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-24. The `.length` property is used to return the length of the string.
-    v
-    v
-
-25. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-26. The `.length` property is used to return the length of the string.
-
-v
-
-1. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-2. The `.length` property is used to return the length of the string.
-   v
-   v
-   v
-   v
-   v
-   v
-   v
-
-v
-
-1. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-2. The `.length` property is used to return the length of the string.
-3. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
-4. The `.length` property is used to return the length of the string.
 
 5. You can create a string in JavaScript by using the double quotes ( “ ” ) or single quotes ( ‘ ’ ).
 6. The `.length` property is used to return the length of the string.
@@ -96,10 +16,10 @@ v
 # **1. Basic Function**
 
 ```jsx
-1. function sum(x, y) {
-2.   return x + y;
-3. }
-4. sum(3, 4);
+function sum(x, y) {
+  return x + y;
+}
+sum(3, 4);
 ```
 
 1. In JavaScript, you **have** to return from inside functions. If you forget to write `return`, your function will return `undefined`.
